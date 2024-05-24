@@ -13,10 +13,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="./static/css/style.css">
 	<link rel="stylesheet" href="./static/css/root.css">
+	<link type="text/css" rel="stylesheet" href="./static/css/aplayer.css"/>
+	<link type="text/css" rel="stylesheet" href="./static/css/APlayer.min.css"/>
+	<link type="text/css" rel="stylesheet" href="./static/css/color.css"/>
+	<script src="https://lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 
 <body>
+	<div id="nav-music">
+  <div id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()">播放音乐</div>
+  <meting-js id="531321323" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js>
+</div>
 	<div id="zyyo-loading">
 		<div id="zyyo-loading-center">
 		</div>
@@ -100,10 +108,10 @@
 					Hello I' m <span class="gradientText">
 						LZH-ZONE </span>
 				</div>
-				<div class="description">👦 <span class="purpleText">珊瑚云免费公益</span> CDN
+				<div class="description">👦 <span class="purpleText">珊瑚云</span>免费公益<span class="purpleText">CDN</span>
 				</div>
 				<div class="description">📝 每人限制仅能申请一个<span class="purpleText textBackground">4-99</span> 位子域名
-					 <span class="purpleText textBackground">只为</span>小白开发者提供. </div>
+					 只为<span class="purpleText textBackground">小白开发者</span>提供. </div>
 
 				<div class="iconContainer">
 					<a class="iconItem" onclick="" href="https://github.com/lzh-zone">
@@ -247,7 +255,7 @@
 		</div>
 	</div>
 	<footer>
-		Zyyo © 2024 |
+		LZH-ZONE © 2024 |
 		<a href="http://host.coms.su/">
 			shanhucloud </a>
 	</footer>
@@ -260,10 +268,13 @@
 </body>
 <script src="./static/js/script.js"> </script>
 
+<script src="./static/js/APlayer.min.js"></script>
+<script src="./static/js/Meting2.min.js"></script>
+<script async data-pjax src="./static/js/anzhiyu.js"></script>
+<script async data-pjax src="./static/js/anzhiyufunction.js"></script>
+<script async src="./static/js/anzhiyuOnlyOne.js"></script>
 
 
 
-<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-<script>LA.init({ id: "KFqltKSkJgQTGD9l", ck: "KFqltKSkJgQTGD9l" })</script>
 
 </html>
